@@ -3,18 +3,18 @@ import os
 import re
 
 dire = os.listdir()
-pngdir = []
+imgdir = []
 f_type = input(" Extension : ")
 for a in dire:
 	x = re.findall(rf'.+.{f_type}',a)
 	if x:
-		pngdir.append(x)
+		imgdir.append(x)
 
-print(f" {len(pngdir)} Images Were Found Under [ {f_type} ] Extension")
+print(f" {len(imgdir)} Images Were Found Under [ {f_type} ] Extension")
 converter = input(" Convert to : ")
 index = 1
 
-for i in pngdir:
+for i in imgdir:
 	for k in i:
 		im = Image.open(k)
 		rgb_im = im.convert('RGB')
