@@ -14,4 +14,4 @@
 
 > All You Have to do it repalce File Type That needs to Be Converted and File Type after Converted to Below Places
 
-###### EX : Usage : Converter.py PNG JPEG
+###### EX : Usage : Convert.py PNG JPEG
