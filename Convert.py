@@ -7,7 +7,7 @@ try:
 	dire = os.listdir()
 	imgdir = []
 	if len(sys.argv) == 3:
-		f_type = sys.argv[1].lower().strip()
+		f_type = sys.argv[1].strip()
 		if len(f_type) == 0:
 			sys.exit()
 		for a in dire:
@@ -16,7 +16,7 @@ try:
 				imgdir.append(x)
 
 		print(f"\n $ {len(imgdir)} Files Were Found Under [ {f_type} ] Extension")
-		converter = sys.argv[2].lower().strip()
+		converter = sys.argv[2].strip()
 		if len(converter) == 0:
 			sys.exit()
 		index = 1
@@ -39,6 +39,6 @@ try:
 	else:
 		print("\n $ Usage : Convert {Format} {Format}")
 		sys.exit()
-		
+
 except Exception as ExecutionError:
 	print(f"\n Oops! This Happend : {ExecutionError}")
