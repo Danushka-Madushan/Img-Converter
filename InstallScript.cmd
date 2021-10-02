@@ -28,5 +28,5 @@ if '%errorlevel%' NEQ '0' (
     pushd "%CD%"
     CD /D "%~dp0"
 :--------------------------------------
-copy "%CD%\Convert.py" "C:\Windows\System32"
+copy "%CD%\Conv.py" "C:\Windows\System32"
 pause
