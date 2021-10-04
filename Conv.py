@@ -39,7 +39,7 @@ try:
 					os.remove(k)
 					print(f"[ Processed : {index} ]", end="\r")
 					index += 1
-		print(f"\n $ [ Size : {round(input_val/1024/1024, 2)}MB > {round(store_val/1024/1024, 2)}MB ]")
+		print(f"\n $ [ Size : {round(input_val/1024/1024, 1)}MB > {round(store_val/1024/1024, 1)}MB ]")
 	else:
 		print("\n $ Usage : Convert {Format} {Format}")
 		sys.exit()
