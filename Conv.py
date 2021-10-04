@@ -7,13 +7,17 @@ try:
 	dire = os.listdir()
 	imgdir = []
 	if len(sys.argv) == 3:
-		f_type = sys.argv[1].strip()
-		if len(f_type) == 0:
+		if sys.argv[1] == sys.argv[2]:
+			print("\n $ Same File Type! ")
 			sys.exit()
-		for a in dire:
-			x = re.findall(rf'.+.{f_type}',a)
-			if x:
-				imgdir.append(x)
+		else:
+			f_type = sys.argv[1].strip()
+			if len(f_type) == 0:
+				sys.exit()
+			for a in dire:
+				x = re.findall(rf'.+.{f_type}',a)
+				if x:
+					imgdir.append(x)
 
 		print(f"\n $ {len(imgdir)} Files Were Found Under [ {f_type} ] Extension")
 		converter = sys.argv[2].strip()
