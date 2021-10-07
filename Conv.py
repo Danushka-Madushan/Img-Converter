@@ -41,7 +41,7 @@ try:
 					index += 1
 		print(f"\n $ [ Size : {round(input_val/1024/1024, 1)}MB > {round(store_val/1024/1024, 1)}MB ]")
 	else:
-		print("\n $ Usage : Convert {Format} {Format}")
+		print("\n $ Usage : Conv.py {Format} {Format}")
 		sys.exit()
 
 except Exception as ExecutionError:
